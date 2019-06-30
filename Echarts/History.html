@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HISTORYofBirds</title>
+</head>
+
+<body>
+<div id="main" style="width : 100%;height : 800px;"></div>
+
+<script src="echarts.js"></script>
+<script src="../d3/d3.js"></script>
+
+<script>
+        var option;
+        var historyCharts = echarts.init(document.getElementById('main'));
+
+        d3.csv('历史趋势.csv', function (csv) {
+                //console.log(csv);
+                convertData(csv);
+                option = {
+                        title: {
+                                text: '大趋势'
+                        },
+                        legend: {
+                                data: ['Area', 'AQI', 'migrantBird', 'residentBird', 'temperature']
+                        },
+                        grid: {
+                                left: '3%',
+                                right: '4%',
+                                bottom: '3%',
+                                containLabel: true
+                        },
+                        toolbox: {
+                                feature: {
+                                        saveAsImage: {}
+                                }
+                        },
+                        xAxis: {
+                                type: 'category',
+                                boundaryGap: false,
+                                data: year
+                        },
+                        yAxis: {
+                                type: 'value'
+                        },
+                        series: [
+                                {
+                                        name: '历史趋势',
+                                        type:'line',
+                                        data: area,
+                                        label: {
+                                                normal: {
+                                                        show: false
+                                                },
+                                                emphasis: {
+                                                        show: false
+                                                }
+                                        },
+                                        itemStyle: {
+                                                emphasis: {
+                                                        borderColor: '#fff',
+                                                        borderWidth: 1
+                                                }
+                                        }
+                                }
+                        ],
+                };
+
+                historyCharts.setOption(option);
+                historyCharts.resize(size);
+
+
+        });
+
+        var year = [];
+        var area = [];
+        var aqiarr = [];
+        var migrant = [];
+        var resident = [];
+        var temperature = [];
+
+        function convertData(data) {
+
+                for(i = 0; i < data.length; i++){
+
+                        year.push(data[i].attribution);
+                        area.push(checkLength(data[i].Area));
+                        aqiarr.push(checkLength(data[i].AQI));
+                        migrant.push(checkLength(data[i].migrantBird));
+                        resident.push(checkLength(data[i].risidentBird));
+                        temperature.push(checkLength(data[i].temperature));
+                }
+                console.log(resident);
+        }
+
+        function checkLength(str) {
+                if(str.length == 0) {
+                        return 0;
+                } else {
+                        return parseFloat(str);
+                }
+        }
+
+
+</script>
+</body>
+</html>

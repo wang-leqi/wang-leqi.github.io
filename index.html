@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+        <title>湿地网页</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--[if lte IE 8]>
+        <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+        <!--[if lte IE 9]>
+        <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+        <style>
+                #birdContainer {
+                        position: absolute;
+                        /*width: 100%;*/
+                        /*height: 100%;*/
+                        overflow: hidden;
+                        /*background: linear-gradient(#bfecf0, #ffeda5);*/
+                        /*background: linear-gradient(#283537, #373024);*/
+                }
+
+        </style>
+</head>
+
+<body>
+<div id="birdContainer"></div>
+<!-- Header -->
+<section id="header" class="dark" style="background: none">
+        <a href="http://www.w3school.com.cn">English</a>
+
+        <header>
+                <h1>邛海湿地数据</h1>
+                <p>鸟种类数量：<span style="font-size: 30px;">86</span></p>
+                <p>2016年观测数量：<span style="font-size: 30px;">4695</span></p>
+                <p>2017年邛海最高水位时水域面积：<span style="font-size: 30px;">31平方公里</span></p>
+                <p>2016年西昌年平均气温：<span style="font-size: 30px;">12.24摄氏度</span></p>
+
+                <p id="lake_realtime"></p>
+        </header>
+        <!--<footer>-->
+        <!--<a href="#first" class="button scrolly">Proceed to second phase</a>-->
+        <!--</footer>-->
+</section>
+
+<!-- First -->
+<section id="first" class="main">
+        <header>
+                <div class="container" align="center">
+                        <h2>邛海地区环境历史数据变化趋势</h2>
+                        <div>
+                                <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邛海，位于四川省凉山彝族自治州西昌市，是四川省第二大淡水湖，至今约180万年。其形状如蜗牛，南北长11.5公里，东西宽5.5公里，周长35公里，水域面积31平方公里；湖水平均深14米，最深处34米；水面标高为1507.14—1509.28米；水位变幅小，集水面积约30平方公里。卭海湿地环绕环海，总面积约两万亩，是我国目前最大的城市湿地公园。<br/><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上世纪，受围湖造田、网箱养鱼及大量农家乐影响，邛海周边大量的滩涂，沼泽被破坏，邛海生态环境变得十分脆弱，水域面积不大减小，水深下降水质不断恶化，水体富营养化严重，水浮莲大量滋生。西昌市委市政府意识到治理和恢复邛海生态环境的必要性和重要性，陆续搬迁邛海周边数万人口，釆取退田还湖、退塘还湖、退房还湖、截污管网建设等措恢复邛海湿地，在原有池塘沼泽基础上种植了多种适合本地的水陆生植物，邛海生态环境的有了显著改善，水域面积稳步增大，水质也日益提升。
+
+                                </p>
+                        </div>
+
+                </div>
+        </header>
+        <div class="content dark style2 featured">
+                <div class="container">
+                        <div id="main" style="height: 600px"></div>
+                </div>
+        </div>
+</section>
+
+<!-- second -->
+<section id="second" class="main">
+        <header>
+                <div class="container">
+                        <h2>邛海地区鸟类历史数据变化趋势</h2>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邛海湿地恢复建设从2009年起共分六期，总面积2万亩，预计总投资达50余亿元。2014年10月，一至六期工程全面完工，目前邛海湿地已成为全国最大城市湿地。2012年9月，邛海湿地三期“烟雨鹭洲”开园。湿地三期建有生态防护林带，宣教管护、水质净化、生态利用、近自然恢复“四区”，深水游禽鸟类、浅水涉禽鸟类、林灌鸟类“三栖息地”，生态、气象、物种、水质等多个科研监测点，形成了“一带九园十八景”。从2009年到2012年，西昌已先后建成一期“观鸟岛”、二期“梦里水乡”、三期“烟雨鹭洲”、四期“西波鹤影”共8500亩湿地。从2013年10月开始建设的邛海湿地五、六期开园，一至六期湿地面积已超过2万亩，邛海水域面积也将恢复至上世纪的38平方公里，成为全国最大的城市湿地。
+                                经统计，湿地鸟类自1988的21种391只发展至2016年的XX种4695只（14年高达6961只），其中不包括未被观察到但已知在邛海地区出现的鸟类，如有“鸟类中大熊猫”之称、与华南虎、滇金丝猴齐名、属于中国特一级重点保护鸟类的中华秋沙鸭等。以下是邛海湿地自1988年各类鸟的变化数据:<br/><br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：在下图中，由于每年统计汇总的时间不同，最多的候鸟种类也会有不同。<br/>
+                        </p>
+
+                </div>
+        </header>
+        <div class="content dark style1 featured">
+                <div class="container">
+                        <div id="mainDetail" style="height: 600px" style="padding:0px 0px 0px 0px"></div>
+
+                </div>
+        </div>
+</section>
+
+
+<!-- Second -->
+<section id="third" class="main">
+        <header>
+                <div class="container" align="center">
+                        <h2>邛海湿地鸟类赏析</h2>
+                        <!--<p>每年这里都会有数十万只候鸟从西伯利亚飞到这里过冬，鸟类的种群和数量也在年年攀升。</p>-->
+                </div>
+        </header>
+
+        <!--<div id = "photos" class="content dark style1 featured"  style="height: 600px">-->
+        <!--<div class="container">-->
+        <!--<div id="wall"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="content dark style3">-->
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="4u 12u(narrow)">-->
+        <!--<section>-->
+        <!--<h3>邛海湿地鸟类赏析</h3>-->
+        <!--<p>据悉，两百万年前，西昌地区出现了大规模断裂，其中两条断裂带相互交汇在一起，它们与同时出现在北部的断裂带构成了一个倒三角形，在强烈的地质作用下，三角形地块陷落，形成了一个封闭的湖盆，在此后漫长的岁月里，周围山上被洪水冲刷下来的泥石逐渐在盆地内沉积，最终使邛海形成了今天的模样。邛海的特殊地形早就了它独特的气候，毗邻的青藏高原和大小凉山阻挡了冷空气的入侵，而从高空环流气流来说，主要受西南季风控制，影响到这里的主要以晴暖天气为主。正是这样温暖的气流，引领着寻觅暖巢的候鸟们飞临邛海，也正是温暖的气候，让邛海的鱼儿都显得与众不同，更加吸引来自各地的候鸟。</p>-->
+        <!--&lt;!&ndash;<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui&ndash;&gt;-->
+        <!--&lt;!&ndash;lacinia&ndash;&gt;-->
+        <!--&lt;!&ndash;accumsan vivamus augue cubilia vivamus nisi eu eget ornare&ndash;&gt;-->
+        <!--&lt;!&ndash;varius gravida dolore&ndash;&gt;-->
+        <!--&lt;!&ndash;euismod lorem ipsum dolor.</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<footer>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="#third" class="button scrolly">Accumsan nisi tempor</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</footer>&ndash;&gt;-->
+        <!--</section>-->
+        <!--</div>-->
+        <!--<div class="8u 12u(narrow)">-->
+        <!--<div class="row">-->
+        <!--<div class="6u"><a href="#" class="image fit"><img-->
+        <!--src="images/pic01.jpg" alt=""/></a></div>-->
+        <!--<div class="6u"><a href="#" class="image fit"><img-->
+        <!--src="images/pic02.jpg" alt=""/></a></div>-->
+        <!--<div class="6u"><a href="#" class="image fit"><img-->
+        <!--src="images/pic03.jpg" alt=""/></a></div>-->
+        <!--<div class="6u"><a href="#" class="image fit"><img-->
+        <!--src="images/pic04.jpg" alt=""/></a></div>-->
+        <!--<div class="6u"><a href="#" class="image fit"><img-->
+        <!--src="images/pic05.jpg" alt=""/></a></div>-->
+        <!--<div class="6u"><a href="#" class="image fit"><img-->
+        <!--src="images/pic06.jpg" alt=""/></a></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+
+        <!-- Third -->
+        <section id="fourth" class="main">
+                <!--<header>-->
+                <!--<div class="container">-->
+                <!--<h2>Ornare varius lorem ipsum ante lectus</h2>-->
+                <!--<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem-->
+                <!--ipsum dolor sit amet consequat<br/>-->
+                <!--feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida-->
+                <!--euismod lorem ipsum dolor sit amet.</p>-->
+                <!--</div>-->
+                <!--</header>-->
+                <div class="content dark style3">
+                        <div class="container">
+                                <!--<span class="image featured"><img src="images/pic07.jpg" alt=""/></span>-->
+                                <div class="row">
+                                        <div>
+                                                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每年这里都会有数十万只候鸟从西伯利亚飞到这里过冬，鸟类的种群和数量也在年年攀升。</h3>
+
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据悉，两百万年前，西昌地区出现了大规模断裂，其中两条断裂带相互交汇在一起
+                                                        ，它们与同时出现在北部的断裂带构成了一个倒三角形，
+                                                        在强烈的地质作用下，三角形地块陷落，形成了一个封闭的湖盆，在此后漫长的岁月里，周围山上被洪水冲刷下来的泥石逐渐在盆地内沉积，
+                                                        最终使邛海形成了今天的模样。邛海的特殊地形早就了它独特的气候，
+                                                        毗邻的青藏高原和大小凉山阻挡了冷空气的入侵，而从高空环流气流来说，主要受西南季风控制，
+                                                        影响到这里的主要以晴暖天气为主。正是这样温暖的气流，引领着寻觅暖巢的候鸟们飞临邛海，也正是温暖的气候，
+                                                        让邛海的鱼儿都显得与众不同，更加吸引来自各地的候鸟。</p>
+
+
+                                                <p>
+                                                        俗话说得好：“鸟为食亡。”邛海之所以受鸟类欢迎，不仅仅因为水质好，环境优美，对这些美丽的鸟儿来说，
+                                                        偌大的邛海湖里，隐藏着鸟类喜爱的食物。很多水鸟都爱吃鱼虾，邛海湖的鱼儿种类繁多，虽然地处高原，
+                                                        但这里的鱼与青藏高原特有的鱼类区系完全不同，而是与云南境内的金沙江鱼类区系相似。这和邛海温暖的气候是分不开的。</p>
+                                                <p>
+                                                        虽然今天的邛海湿地碧波荡漾，散发出和谐浪漫的魅力。但在20世纪60年代末，邛海也曾陷入生态危机。
+                                                        据了解，自从人类开始在邛海繁衍子孙，鸟类曾慷慨地将自己的天堂让予人类共享，邛海曾经是人与鸟共同觅食的地方。
+                                                        唐朝末年，西昌为云南境内的大理国所控制，传说中，彝族历史上最有名的大毕摩(巫师)阿苏拉则当时曾在此地修炼，
+                                                        这暗示着当时邛海还是一个人烟稀少的所在。按彝族传统，大雁是一种极为高贵和吉祥的鸟类，可以想见，
+                                                        阿苏拉则在邛海边目睹到成群的大雁，一定会感到内心的喜悦。约在清朝初年，福建沿海的一群渔民被官府押送到邛海，
+                                                        这些人的后裔就是今天邛海边的农民。随着他们的到来，渔业在邛海边繁荣起来。
+                                                </p>
+                                                <p>邛海人类与鸟类第一次大规模的冲突始于上个世纪60年代。经历过3年自然灾害的村民们把填饱肚子的希望投向了那一块块湿地，
+                                                        “围海造田”以种植水稻成为当时激动人心的生产口号。与此同时，汇入邛海的8条河流两岸的农民，为了获得更多的食物，不断将山林砍去，
+                                                        种上土豆、玉米等旱地农作物。慢慢的，邛海流域严重的水土流失和围海造田造成邛海大面积缩小，到上个世纪80年代末，
+                                                        邛海的面积已经由60年代的31平方公里缩减为27平方公里，湿地基本消失，鸟类遭遇第一次生存危机。那些原本在湿地芦苇中筑巢生育后代的水秧鸡、
+                                                        野鸭等，只能选择每年冬季才飞来邛海躲避严寒，而剩下一些在大树
+                                               上筑巢的鸟类如白鹭、灰鹭等，努力挺过这一劫，得以继续生存于邛海。
+                                                <p>
+
+                                                        人类向邛海索取的脚步并未停止，第二次开发浪潮始于上世纪80年代中期，这次开发已经明显具有商业特征。
+                                                        起初是网箱养鱼取代天然捕鱼业遍布邛海水域，然后是餐饮娱乐业开始在邛海周边兴起。鱼饲料直接投入湖中，
+                                                        生活污水直接往湖里排放，邛海水质被迅速污染，湖岸边飘满浮萍和水葫芦。然而，这次开发的最大受害者不是鸟类却是人类。
+                                                        因为水质呈现富营养化，水中的鱼类因为缺氧常常浮出水面，反而给了鸟类轻松捕鱼的机会。对于人类而言，邛海是西昌市十万城市居民的饮用水源，
+                                                        水质恶化严重影响了他们的生活。但是。鸟类的盛宴也没能延续多久，很快也被这次“商业开发”波及到，甚至引来了灭顶之灾，从那时开始，
+                                                        鸟在人们眼中多了一层含义：野味。
+
+                                                        此前，当地人没想过费工夫去把这些天上飞的家伙抓来当食物，充其量只是孩子们手中的玩物，
+                                                        鸟类常常遇到的袭击是孩子们手中的弹弓。然而，随着社会的发展，基本摆脱食物匮乏状态的人们，开始在食谱中添加更丰富的味道，
+                                                        餐饮业的兴起使大规模捕鸟成为这一段时期不可避免的风气。</p>
+
+                                                <p>
+                                                        城市居民打鸟是为了娱乐，而邛海边的少数村民们捕鸟则是为了向餐馆出售以牟利。
+                                                        他们用透明、坚韧的渔线绕成一串一串的圈套布置在岸边，鸟类的头或脚一旦钻入圈套，
+                                                        随着鸟类的挣扎渔线就会越拉越紧。不远万里前来邛海享受“日光浴”的野鸭们不幸成了当地餐馆的一道特色招牌菜。</p>
+                                                <p>从上世纪90年代初期的种种迹象分析，邛海的鸟类生存环境相当不妙，它们的栖息地即将消失。
+                                                        越来越多的湖边餐馆投消费者所好，将房屋的支柱伸入水中，号称“吊脚楼群落”；越来越多的单位、
+                                                        宾馆和娱乐城紧贴着湖边而建，滩涂和湿地逐渐消失，取而代之的是水泥修筑的堤岸。邛海流域水土流失越来越严重，
+                                                        每年注入湖中的泥沙流量为50余万立方米，照这样的速度推算，不到50年，邛海就会消失。</p>
+                                                <p>由于大量围海造田、填海造塘、无序开发和入湖河流带来的泥沙淤积，污染和水土流失，
+                                                        邛海水面面积从34平方公里降至2008年不足27平方公里，水质从Ⅱ类降至Ⅲ类，部分区域降至Ⅳ类，
+                                                        近三分之二的湖滨湿地遭到严重破坏，滩涂和原生湿地植被基本消失，外来物种入侵，生态环境相对脆弱，
+                                                        水土流失严重。面对日趋恶化的邛海生态环境，州、市两级政府意识到治理邛海生态破坏和恢复邛海生态环境的必要性和重要性，
+                                                        邛海保护迫在眉睫。</p>
+                                                <p>1997年，邛海的历史曾发生过一次大的拐弯，导致这次历史拐点的是《邛海保护条例》的施行。邛海生态环境保护到了这一年，
+                                                        已是箭在弦上，不得不发。当时有两个充分的理由：一是作为主要饮用水源的邛海水质恶化；
+                                                        二是当地政府认识到具有健康自然生态特征的邛海将会给当地带来巨大的旅游收益。出于人类生存与发展的需要，
+                                                        当地政府开始采取行动善待邛海的鸟类及其生存环境。2002年，邛海管理局聘请了10名护鸟员，并规定如果护鸟员抓到一名偷鸟者，
+                                                        罚款的一半作为奖励。“从那几年开始，飞来邛海的候鸟数量就在不断增加。”杨军说道。</p>
+                                        </div>
+
+
+                                </div>
+                        </div>
+                </div>
+
+                <div class="content dark style1 featured">
+                        <div class="container">
+                                <div id="timeAxis" style="height: 600px"></div>
+
+                        </div>
+                </div>
+        </section>
+
+
+        <!-- Fourth -->
+        <section id="fifth" class="main">
+                <header>
+                        <div class="container">
+                                <h2>Reference</h2>
+                                <p>网页文字来自：http://www.112seo.com/article-4103114.html<br/>
+                                       [1] 杨军，赵勇，张红实，李国祥，罗洪.利用卫星遥感影像数据分析邛海湿地近50年的变迁,2013,34(4)<br/>
+                                        [2]崔学振，杨拉珠，陈安康，张荫荪，何芬奇，庐沽湖邛海越冬湿地鸟类调查，1992,11(4)<br/>
+                                        [3]李海涛,邛海湖冬季湿地鸟类数量变动及保护建议,2000,14(3)<br/>
+                                        [4]张宇，杨红,邛海湖盆区湿地现状及生态系统评价,2010,24(4)<br/>
+                                        [5]邓其祥，李海涛，邛海秋冬季鸟类组成, 1993,14(1)<br/>
+                                        [6]亓东明，杨怀珍，王静，唐伟，邛海湿地春季雀形目鸟类区系组成及群落结构研究，2015<br/>
+                                        [7]张一凡,邛海湿地观鸟报告与保护,2016<br/>
+                                        [8]杨红,邛海湿地外来入侵物种现状调查及对邛海湿地的影响,2009,28(11)<br/>
+                                        [9]马金华,邛海湿地夜鹭巢址选择研究,2011,39(17)<br/>
+                                        [10]陈明东，朱海峰，谢扬，董小婉，陈晨，王姗镒,邛海湿地植物对污染物去除作用研究,2011,25(2)<br/>
+                                        [11]田勇，贺丹晨，陈丽娟,湿地鸟类栖息地环境营造的研究——以西昌邛海湿地为例,2012,32(8)<br/>
+                                        [12]林雯, 冉江洪, 郑志荣, 蔡国,四川凉山彝族自治州湿地鸟类组成及变化探讨<br/>
+                                        [13]李海涛，郑璐，马金华，黄渝,四川省西昌市邛海湖湿地现状及其鸟类保护,2009,23(1)<br/>
+                                        [14]李凤琴,李海涛,四川省西昌市邛海湿地留鸟及其生态分布,2015<br/>
+                                        [15]陈开伟,四川西昌市邛海湿地生态系统建设与保护对策,2012,40(28)<br/>
+                                        [16]王立新,西昌市邛海湿地公园水生植物现状及配置分析,2011,17
+
+
+                                </p>
+                        </div>
+                </header>
+                <!--<div class="content style4 featured">-->
+                <!--<div class="container 75%">-->
+                <!--<form method="post" action="#">-->
+                <!--<div class="row 50%">-->
+                <!--<div class="6u 12u(mobile)"><input type="text" placeholder="Name"/></div>-->
+                <!--<div class="6u 12u(mobile)"><input type="text" placeholder="Email"/></div>-->
+                <!--</div>-->
+                <!--<div class="row 50%">-->
+                <!--<div class="12u"><textarea name="message" placeholder="Message"></textarea>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                <!--<div class="12u">-->
+                <!--<ul class="actions">-->
+                <!--<li><input type="submit" class="button" value="Send Message"/>-->
+                <!--</li>-->
+                <!--<li><input type="reset" class="button alt" value="Clear Form"/>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</form>-->
+                <!--</div>-->
+                <!--</div>-->
+        </section>
+
+        <!--Footer -->
+        <section id="footer">
+                <!--<ul class="icons">-->
+                <!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
+                <!--<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
+                <!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+                <!--<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+                <!--<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>-->
+                <!--</ul>-->
+                <div class="copyright">
+                        <ul class="menu">
+                                <li>&copy;Contact: zuoluomao@gmail.com </li>
+                                <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+                        </ul>
+                </div>
+        </section>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="libs/echarts.min.js"></script>
+
+        <script src="libs/three.js"></script>
+        <script src="libs/Detector.js"></script>
+        <script src="libs/stats.min.js"></script>
+        <script src="libs/dat.gui.min.js"></script>
+        <script src="libs/jquery.magnific-popup.min.js"></script>
+
+        <script src="js/GPUComputationRenderer.js"></script>
+        <script src="libs/d3.min.js"></script>
+
+        <!--[if lte IE 8]>
+        <script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+        <script src="js/charts.js"></script>
+        <!--<script src = "js/bird_charts.js"></script>-->
+        <script src="js/birdTreemap.js"></script>
+        <script src="js/TimeAxis.js"></script>
+
+        <!-- shader for bird's position -->
+        <script id="fragmentShaderPosition" type="x-shader/x-fragment">
+
+uniform float time;
+uniform float delta;
+
+void main()	{
+
+        vec2 uv = gl_FragCoord.xy / resolution.xy;
+        vec4 tmpPos = texture2D( texturePosition, uv );
+        vec3 position = tmpPos.xyz;
+        vec3 velocity = texture2D( textureVelocity, uv ).xyz;
+
+        float phase = tmpPos.w;
+
+        phase = mod( ( phase + delta +
+                length( velocity.xz ) * delta * 3. +
+                max( velocity.y, 0.0 ) * delta * 6. ), 62.83 );
+
+        gl_FragColor = vec4( position + velocity * delta * 15. , phase );
+
+}
+
+
+
+        </script>
+
+        <!-- shader for bird's velocity -->
+        <script id="fragmentShaderVelocity" type="x-shader/x-fragment">
+
+uniform float time;
+uniform float testing;
+uniform float delta; // about 0.016
+uniform float seperationDistance; // 20
+uniform float alignmentDistance; // 40
+uniform float cohesionDistance; //
+uniform float freedomFactor;
+uniform vec3 predator;
+
+const float width = resolution.x;
+const float height = resolution.y;
+
+const float PI = 3.141592653589793;
+const float PI_2 = PI * 2.0;
+// const float VISION = PI * 0.55;
+
+float zoneRadius = 40.0;
+float zoneRadiusSquared = 1600.0;
+
+float separationThresh = 0.45;
+float alignmentThresh = 0.65;
+
+const float UPPER_BOUNDS = BOUNDS;
+const float LOWER_BOUNDS = -UPPER_BOUNDS;
+
+const float SPEED_LIMIT = 9.0;
+
+float rand(vec2 co){
+        return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
+}
+
+void main() {
+
+        zoneRadius = seperationDistance + alignmentDistance + cohesionDistance;
+        separationThresh = seperationDistance / zoneRadius;
+        alignmentThresh = ( seperationDistance + alignmentDistance ) / zoneRadius;
+        zoneRadiusSquared = zoneRadius * zoneRadius;
+
+
+        vec2 uv = gl_FragCoord.xy / resolution.xy;
+        vec3 birdPosition, birdVelocity;
+
+        vec3 selfPosition = texture2D( texturePosition, uv ).xyz;
+        vec3 selfVelocity = texture2D( textureVelocity, uv ).xyz;
+
+        float dist;
+        vec3 dir; // direction
+        float distSquared;
+
+        float seperationSquared = seperationDistance * seperationDistance;
+        float cohesionSquared = cohesionDistance * cohesionDistance;
+
+        float f;
+        float percent;
+
+        vec3 velocity = selfVelocity;
+
+        float limit = SPEED_LIMIT;
+
+        dir = predator * UPPER_BOUNDS - selfPosition;
+        dir.z = 0.;
+        // dir.z *= 0.6;
+        dist = length( dir );
+        distSquared = dist * dist;
+
+        float preyRadius = 1200.0;
+        float preyRadiusSq = preyRadius * preyRadius;
+
+
+        // move birds away from predator
+        if (dist < preyRadius) {
+
+                f = ( distSquared / preyRadiusSq - 1.0 ) * delta * 100.;
+                velocity += normalize( dir ) * f;
+                limit += 5.0;
+        }
+
+
+        // if (testing == 0.0) {}
+        // if ( rand( uv + time ) < freedomFactor ) {}
+
+
+        // Attract flocks to the center
+        vec3 central = vec3( 0., 0., 0. );
+        dir = selfPosition - central;
+        dist = length( dir );
+
+        dir.y *= 2.5;
+        velocity -= normalize( dir ) * delta * 5.;
+
+        for (float y=0.0;y<height;y++) {
+                for (float x=0.0;x<width;x++) {
+
+                        vec2 ref = vec2( x + 0.5, y + 0.5 ) / resolution.xy;
+                        birdPosition = texture2D( texturePosition, ref ).xyz;
+
+                        dir = birdPosition - selfPosition;
+                        dist = length(dir);
+
+                        if (dist < 0.0001) continue;
+
+                        distSquared = dist * dist;
+
+                        if (distSquared > zoneRadiusSquared ) continue;
+
+                        percent = distSquared / zoneRadiusSquared;
+
+                        if ( percent < separationThresh ) { // low
+
+                                // Separation - Move apart for comfort
+                                f = (separationThresh / percent - 1.0) * delta;
+                                velocity -= normalize(dir) * f;
+
+                        } else if ( percent < alignmentThresh ) { // high
+
+                                // Alignment - fly the same direction
+                                float threshDelta = alignmentThresh - separationThresh;
+                                float adjustedPercent = ( percent - separationThresh ) / threshDelta;
+
+                                birdVelocity = texture2D( textureVelocity, ref ).xyz;
+
+                                f = ( 0.5 - cos( adjustedPercent * PI_2 ) * 0.5 + 0.5 ) * delta;
+                                velocity += normalize(birdVelocity) * f;
+
+                        } else {
+
+                                // Attraction / Cohesion - move closer
+                                float threshDelta = 1.0 - alignmentThresh;
+                                float adjustedPercent = ( percent - alignmentThresh ) / threshDelta;
+
+                                f = ( 0.5 - ( cos( adjustedPercent * PI_2 ) * -0.5 + 0.5 ) ) * delta;
+
+                                velocity += normalize(dir) * f;
+
+                        }
+
+                }
+
+        }
+
+
+
+        // this make tends to fly around than down or up
+        // if (velocity.y > 0.) velocity.y *= (1. - 0.2 * delta);
+
+        // Speed Limits
+        if ( length( velocity ) > limit ) {
+                velocity = normalize( velocity ) * limit;
+        }
+
+        gl_FragColor = vec4( velocity, 1.0 );
+
+}
+
+
+
+        </script>
+
+        <script type="x-shader/x-vertex" id="birdVS">
+
+attribute vec2 reference;
+attribute float birdVertex;
+
+attribute vec3 birdColor;
+
+uniform sampler2D texturePosition;
+uniform sampler2D textureVelocity;
+
+varying vec4 vColor;
+varying float z;
+
+uniform float time;
+
+void main() {
+
+        vec4 tmpPos = texture2D( texturePosition, reference );
+        vec3 pos = tmpPos.xyz;
+        vec3 velocity = normalize(texture2D( textureVelocity, reference ).xyz);
+
+        vec3 newPosition = position;
+
+        if ( birdVertex == 4.0 || birdVertex == 7.0 ) {
+                // flap wings
+                newPosition.y = sin( tmpPos.w ) * 5.;
+        }
+
+        newPosition = mat3( modelMatrix ) * newPosition;
+
+        velocity.z *= -1.;
+        float xz = length( velocity.xz );
+        float xyz = 1.;
+        float x = sqrt( 1. - velocity.y * velocity.y );
+
+        float cosry = velocity.x / xz;
+        float sinry = velocity.z / xz;
+
+        float cosrz = x / xyz;
+        float sinrz = velocity.y / xyz;
+
+        mat3 maty =  mat3(
+                cosry, 0, -sinry,//压缩程度
+                0    , 1, 0     ,
+                sinry, 0, cosry
+
+        );
+
+        mat3 matz =  mat3(
+                cosrz , sinrz, 0,
+                -sinrz, cosrz, 0,
+                0     , 0    , 1
+        );
+
+        newPosition =  maty * matz * newPosition;
+        newPosition += pos;
+
+        z = newPosition.z;
+
+        vColor = vec4( birdColor, 1.0 );
+        gl_Position = projectionMatrix *  viewMatrix  * vec4( newPosition, 1.0 );
+}
+
+
+
+        </script>
+
+        <!-- bird geometry shader -->
+        <script type="x-shader/x-fragment" id="birdFS">
+
+varying vec4 vColor;
+varying float z;
+
+uniform vec3 color;
+
+void main() {
+        // Fake colors for now
+        float z2 = 0.5 + ( 0.5 - z ) / 1000. * vColor.x;
+        //目测是鸟的明暗程度,把括号里那个参数改小是颜色变深
+        gl_FragColor = vec4( vColor.x, vColor.y, vColor.z, 0.3);
+}
+
+
+
+        </script>
+
+        <script src="js/scene3d.js"></script>
+
+        <script>
+
+                var ip = d3.interpolate(27.65, 26.64);
+                console.log(ip(0.2));
+                console.log(ip(0.4));
+                console.log(ip(0.6));
+                console.log(ip(0.8));
+
+                // -------------------------------------------------------------------
+                //  实时更换背景颜色
+                // -------------------------------------------------------------------
+                d3.interval(function (elapsed) {
+
+                        // 根据实时时间修改首页背景
+                        var date = new Date();
+                        var newMinutes;
+                        if(date.getMinutes()<10){
+                                newMinutes = "0" + date.getMinutes();
+                        }else{
+                                newMinutes = date.getMinutes();
+                        }
+                        var newSeconds;
+                        if(date.getSeconds()<10){
+                                newSeconds = "0" + date.getSeconds();
+                        }else{
+                                newSeconds = date.getSeconds();
+                        }
+
+                        var str = "湿地实时时间: " + date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "日 " +
+                                date.getHours() + ":" + newMinutes + ":" + newSeconds;
+                        $("#lake_realtime").html(str);
+
+                        var tscale = d3.scaleLinear()
+                                .domain([0, 86400])
+                                .range([0, 1]);
+
+                        var interpolate1 = d3.interpolateHsl(d3.hsl(185, 0.62, 0), d3.hsl(185, 0.62, 0.85));
+                        var interpolate2 = d3.interpolateHsl(d3.hsl(37, 0.83, 0), d3.hsl(37, 0.83, 0.82));
+
+                        var currsec = date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds();
+                        var num = tscale(currsec);
+
+                        if (num > 0.5) {
+                                num = 1 - num;
+                        }
+                        if (num < 0.25){
+                                scene.remove(birdMesh);
+                        }else{
+                                scene.add(birdMesh);
+                        }
+
+                        shadowLight.intensity = num * 2;
+
+                        $("#birdContainer").css("background", "linear-gradient(" + interpolate1(num * 2) + ", " + interpolate2(num * 2) + ")");
+                }, 1000);
+
+        </script>
+
+
+</body>
+</html>
